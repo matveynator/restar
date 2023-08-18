@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Склад запчастей</title>
+		<!-- Подключение стилей Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<!-- Навигационное меню -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="./"><img src="logo.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="main.html">Заказ-наряды</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="warehouse.html">Склад запчастей</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="salary.html">Расчет зарплаты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="container mt-5">
+			<h1 class="mb-4">Склад запчастей</h1>
+
+			<div class="row">
+				<!-- Поисковая строка -->
+				<div class="col-md-6 mb-3">
+					<input type="text" class="form-control" placeholder="Поиск по названию или описанию">
+				</div>
+				<!-- Фильтры для сортировки -->
+				<div class="col-md-6 mb-3">
+					<select class="form-select">
+						<option selected>Сортировка по...</option>
+						<option value="name">Названию</option>
+						<option value="price">Цене</option>
+						<option value="popularity">Продаваемости</option>
+					</select>
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- Пример товаров (можете добавить больше блоков для разных товаров) -->
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Запчасть A</h5>
+							<p class="card-text">Описание запчасти A.</p>
+							<p class="card-text text-danger">Цена: $100</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Запчасть B</h5>
+							<p class="card-text">Описание запчасти B.</p>
+							<p class="card-text text-warning">Цена: $75</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Запчасть C</h5>
+							<p class="card-text">Описание запчасти C.</p>
+							<p class="card-text text-success">Цена: $50</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Подключение скриптов Bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
+

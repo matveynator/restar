@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Просмотр работы</title>
+		<!-- Подключение стилей Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	</head>
+	<body>
+
+
+		<!-- Навигационное меню -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="./"><img src="logo.png"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="main.html">Заказ-наряды</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="warehouse.html">Склад запчастей</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="salary.html">Расчет зарплаты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Содержимое страницы -->
+		<div class="container mt-4">
+			<h1>Просмотр работы</h1>
+
+			<!-- Видеозапись и описание -->
+			<div class="row mt-4">
+				<div class="col-md-8">
+					<video controls width="100%">
+						<source src="путь_к_видеозаписи.mp4" type="video/mp4">
+						Ваш браузер не поддерживает видео.
+					</video>
+					<p class="mt-2">Подробное описание работы: Замена масла и фильтра в двигателе автомобиля.</p>
+				</div>
+			</div>
+
+			<!-- Раздел комментариев -->
+			<div class="row mt-4">
+				<div class="col-md-8">
+					<h3>Комментарии</h3>
+					<div class="mb-3">
+						<label for="commentText">Ваш комментарий:</label>
+						<textarea class="form-control" id="commentText" rows="3"></textarea>
+					</div>
+					<button class="btn btn-primary">Оставить комментарий</button>
+					<!-- Здесь можно добавить список комментариев, если они уже есть -->
+				</div>
+			</div>
+		</div>
+
+		<!-- Подключение скриптов Bootstrap -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	</body>
+</html>
+
