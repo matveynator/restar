@@ -90,9 +90,19 @@
 Данное техническое задание содержит основные требования к функциональности и архитектуре приложения. Дополнительные детали, дизайн интерфейса и другие аспекты могут быть определены в процессе детализации проекта совместно с разработчиком.
 
 
-## Сборка:
+## Сборка под >= Mac OS X Mavericks 10.9:
 
 ```
 export MACOSX_DEPLOYMENT_TARGET=10.9
 GOOS=darwin GOARCH=amd64 go build -ldflags="-w -s" -ldflags="mmacosx-version-min=10.9" -o macos-web-app-10.9.app/Contents/MacOS/webapp
 ```
+
+## Сборка под линукс:
+
+```
+sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-dev
+sudo apt-get install libgtk-3-0 libwebkit2gtk-4.0-37
+go build
+```
+
+
