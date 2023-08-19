@@ -107,8 +107,8 @@ func getContentType(filename string) string {
 		return "application/javascript"
 	case ".css":
 		return "text/css"
-	case ".svg":
-		return "image/svg"
+	case ".png":
+		return "image/png"
 	default:
 		return "application/octet-stream"
 	}
