@@ -100,9 +100,9 @@ GOOS=darwin GOARCH=amd64 go build -ldflags="-w -s" -ldflags="mmacosx-version-min
 ## Сборка под линукс:
 
 ```
-sudo apt-get install libgtk-3-dev libwebkit2gtk-4.0-dev
-sudo apt-get install libgtk-3-0 libwebkit2gtk-4.0-37
-go build
+sudo apt-get -y install libgtk-3-dev libwebkit2gtk-4.0-dev
+sudo apt-get -y install libgtk-3-0 libwebkit2gtk-4.0-37
+go build -o restar.linux.app
 ```
 
 
