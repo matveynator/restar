@@ -2,4 +2,4 @@ module restar
 
 go 1.19
 
-require github.com/webview/webview v0.0.0-20230816083456-4ca93a8cde85
+require github.com/webview/webview_go v0.0.0-20230901181450-5a14030a9070
