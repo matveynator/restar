@@ -6,5 +6,7 @@
 		<string>webapp</string>
 		<key>LSMinimumSystemVersion</key>
 		<string>10.2</string>
+		<key>NSCameraUsageDescription</key>
+		<string>Необходимо для получения изображений QR-кодов.</string>
 	</dict>
 </plist>
