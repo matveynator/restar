@@ -37,7 +37,7 @@ func main() {
 	w := webview.New(false)
 	defer w.Destroy()
 	w.SetTitle("RESTAR")
-	w.SetSize(1000, 700, webview.HintNone)
+	w.SetSize(850, 500, webview.HintNone)
 	w.Navigate("http://localhost" + address)
 
 	// Задаем функцию, вызываемую при загрузке страницы

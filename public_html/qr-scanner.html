@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в систему - Автосервис</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+            <div id="video-container">
+                <video id="qr-video"></video>
+            </div>
+            <br>
+            <b>Detected QR code:</b>
+            <span id="cam-qr-result">None</span>
+            <br>
+            <b>Last detected at:</b>
+            <span id="cam-qr-result-timestamp"></span>
+            <br>
+
+            <script type="module">
+                import QrScanner from "https://nimiq.github.io/qr-scanner/qr-scanner.min.js";
+                const video = document.getElementById('qr-video');
+                const videoContainer = document.getElementById('video-container');
+                const camHasCamera = document.getElementById('cam-has-camera');
+                const camList = document.getElementById('cam-list');
+                const camHasFlash = document.getElementById('cam-has-flash');
+                const flashToggle = document.getElementById('flash-toggle');
+                const flashState = document.getElementById('flash-state');
+                const camQrResult = document.getElementById('cam-qr-result');
+                const camQrResultTimestamp = document.getElementById('cam-qr-result-timestamp');
+                const fileSelector = document.getElementById('file-selector');
+                const fileQrResult = document.getElementById('file-qr-result');
+
+                function setResult(label, result) {
+                    console.log(result.data);
+                    label.textContent = result.data;
+                    camQrResultTimestamp.textContent = new Date().toString();
+                    label.style.color = 'teal';
+                    clearTimeout(label.highlightTimeout);
+                    label.highlightTimeout = setTimeout(() => label.style.color = 'inherit', 100);
+                }
+
+                // Web Cam Scanning
+                const scanner = new QrScanner(video, result => setResult(camQrResult, result), {
+                    onDecodeError: error => {
+                        camQrResult.textContent = error;
+                        camQrResult.style.color = 'inherit';
+                    },
+                    highlightScanRegion: true,
+                    highlightCodeOutline: true,
+                });
+
+                const updateFlashAvailability = () => {
+                    scanner.hasFlash().then(hasFlash => {
+                        camHasFlash.textContent = hasFlash;
+                        flashToggle.style.display = hasFlash ? 'inline-block' : 'none';
+                    });
+                };
+
+                scanner.start().then(() => {
+                    updateFlashAvailability();
+                    QrScanner.listCameras(true).then(cameras => cameras.forEach(camera => {
+                        const option = document.createElement('option');
+                        option.value = camera.id;
+                        option.text = camera.label;
+                        camList.add(option);
+                    }));
+                });
+
+                QrScanner.hasCamera().then(hasCamera => camHasCamera.textContent = hasCamera);
+
+                // for debugging
+                window.scanner = scanner;
+
+                document.getElementById('scan-region-highlight-style-select').addEventListener('change', (e) => {
+                    videoContainer.className = e.target.value;
+                    scanner._updateOverlay(); // reposition the highlight because style 2 sets position: relative
+                });
+
+                document.getElementById('show-scan-region').addEventListener('change', (e) => {
+                    const input = e.target;
+                    const label = input.parentNode;
+                    label.parentNode.insertBefore(scanner.$canvas, label.nextSibling);
+                    scanner.$canvas.style.display = input.checked ? 'block' : 'none';
+                });
+
+                document.getElementById('inversion-mode-select').addEventListener('change', event => {
+                    scanner.setInversionMode(event.target.value);
+                });
+
+                camList.addEventListener('change', event => {
+                    scanner.setCamera(event.target.value).then(updateFlashAvailability);
+                });
+
+                flashToggle.addEventListener('click', () => {
+                    scanner.toggleFlash().then(() => flashState.textContent = scanner.isFlashOn() ? 'on' : 'off');
+                });
+
+                document.getElementById('start-button').addEventListener('click', () => {
+                    scanner.start();
+                });
+
+                document.getElementById('stop-button').addEventListener('click', () => {
+                    scanner.stop();
+                });
+            </script>
+            <style>
+                div {
+                    margin-bottom: 16px;
+                }
+
+                #video-container {
+                    line-height: 0;
+                }
+
+                #video-container.example-style-1 .scan-region-highlight-svg,
+                #video-container.example-style-1 .code-outline-highlight {
+                    stroke: #64a2f3 !important;
+                }
+
+                #video-container.example-style-2 {
+                    position: relative;
+                    width: max-content;
+                    height: max-content;
+                    overflow: hidden;
+                }
+
+                #video-container.example-style-2 .scan-region-highlight {
+                    border-radius: 30px;
+                    outline: rgba(0, 0, 0, .25) solid 50vmax;
+                }
+
+                #video-container.example-style-2 .scan-region-highlight-svg {
+                    display: none;
+                }
+
+                #video-container.example-style-2 .code-outline-highlight {
+                    stroke: rgba(255, 255, 255, .5) !important;
+                    stroke-width: 15!important;
+                    stroke-dasharray: none!important;
+                }
+
+                #flash-toggle {
+                    display: none;
+                }
+
+                hr {
+                    margin-top: 32px;
+                }
+
+                input[type="file"] {
+                    display: block;
+                    margin-bottom: 16px;
+                }
+            </style>
+        </div>
+    </div>
+
+        <div class="container mt-5">
+                <div class="row justify-content-center">
+
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header text-center">
+                <h3>Вход в систему</h3>
+            </div>
+            <div class="card-body">
+                <form method="get" action="main.html">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Логин</label>
+                        <input type="text" class="form-control" id="username" placeholder="Введите логин">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Пароль</label>
+                        <input type="password" class="form-control" id="password" placeholder="Введите пароль">
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary">Войти</button>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-center">
+                <img src="logo.png" alt="Логотип" class="img-fluid" style="max-height: 100px;">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
