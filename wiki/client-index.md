@@ -11,6 +11,9 @@
 ## Полученный от GPT результат:
 
 [Клиент: первая страница](/wiki/pages/client-index.html)
+<br>
+<a href="/wiki/pages/client-index.html">test</a>
+
 
 
 
