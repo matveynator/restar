@@ -8,7 +8,7 @@
 
 ## Полученный от GPT результат:
 
-[Клиент: первая страница](/pages/client-index.html)
+[Клиент: первая страница](/wiki/pages/client-index.html)
 
 
 
