@@ -5,10 +5,15 @@
     <img src="/wiki/client-index.jpg" width="30%">
 </p>
 
-## Задание которое было поставлено в GPT:
+## Задание для программиста (что требуется сделать):
 
+Текст задания для программиста
 
-## Полученный результат:
+## Задание которое было поставлено в GPT чтобы сделать макет:
+
+Текст задания для GPT для создания макета
+
+## Полученный макет из GPT:
 
 [Исходный код](/wiki/pages/client-index.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/client-index.html">готовая страница</a>.
 
