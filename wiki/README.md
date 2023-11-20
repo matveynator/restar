@@ -6,7 +6,7 @@
 ## Задания по каждой странице приложения:
 
 ### Клиентская часть:
-- [Клиент: первая страница](wiki/index.md) 
+- [Клиент: первая страница](wiki/client-index.md) 
 - [Клиент: анкета](wiki/client-anketa.md)
 - [Клиент: позвонить/написать](wiki/client-call-write-contacts.md)
 - [Клиент: чат](wiki/client-chat.md)
@@ -17,6 +17,7 @@
 - [Клиент: магазин](wiki/client-shop.md)
 
 ### Сторона менеджера:
+- [Менеджер: первая страница](wiki/manager-index.md)
 - [Менеджер: чат](wiki/manager-chat.md)
 - [Менеджер: личный кабинет](wiki/manager-lk.md)
 - [Менеджер: склад](wiki/manager-warehouse.md)
@@ -31,6 +32,7 @@
 
 
 ### Сторона мастера:
+- [Мастер: первая страница](wiki/master-index.md)
 - [Мастер: новые заявки](wiki/master-orders-new.md)
 - [Мастер: в работе](wiki/master-orders-in-work.md)
 - [Мастер: отложенные работы](wiki/master-orders-postponed.md)
