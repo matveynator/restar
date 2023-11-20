@@ -2,7 +2,7 @@
 
 ## Первичное задание нарисованное на картинке:
 <p align="right">
-    <img align="right" property="og:image" src="/wiki/pages/client-index.jpg" width="30%">
+    <img align="right" property="og:image" src="/wiki/client-index.jpg" width="30%">
 </p>
 
 ## Задание которое было поставлено в GPT:
