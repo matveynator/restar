@@ -10,7 +10,7 @@
 
 ## Полученный результат:
 
-[Исходный код](/wiki/pages/client-index.html) и <a href="https://htmlpreview.github.io/?https://github.com/matveynator/restar/wiki/pages/client-index.html">отрендеренная страница</a>
+[Исходный код](/wiki/pages/client-index.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/client-index.html">готовая страница</a>.
 
 
 
