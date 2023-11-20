@@ -1,0 +1,73 @@
+<!-- магазин --> 
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин RE</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange;
+        }
+
+        .brand-title {
+            background-color: orange;
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body class="p-5">
+
+    <div class="container">
+
+        <!-- Название в верхнем левом углу -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1 class="text-left brand-title">RE</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Левая колонка с категориями товаров -->
+            <div class="col-md-3">
+                <h5>Категории</h5>
+                <ul class="list-group">
+                    <li class="list-group-item">Стартер</li>
+                    <li class="list-group-item">Генератор</li>
+                    <li class="list-group-item">Комплектующие ст</li>
+                    <li class="list-group-item">Комплектующие ген</li>
+                </ul>
+            </div>
+
+            <!-- Центральная колонка с товарами -->
+            <div class="col-md-6">
+                <!-- Пример товара -->
+                <div class="card mb-3">
+                    <img src="path_to_image.jpg" class="card-img-top" alt="Товар 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Название товара 1</h5>
+                        <p class="card-text">Описание товара 1.</p>
+                    </div>
+                </div>
+                <!-- Добавьте другие товары по аналогии -->
+            </div>
+
+            <!-- Правая колонка с текстовым поиском -->
+            <div class="col-md-3">
+                <h5>Поиск по магазину</h5>
+                <input type="text" class="form-control" placeholder="Введите запрос...">
+                <button class="btn btn-primary mt-2">Поиск</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

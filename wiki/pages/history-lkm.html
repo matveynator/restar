@@ -1,0 +1,62 @@
+<!--История лкм-->
+ <html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>История работ мастера</h2>
+
+    <!-- Вкладки для работы с историей -->
+    <ul class="nav nav-tabs" id="masterHistoryTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="recent-tab" data-toggle="tab" href="#recent" role="tab" aria-controls="recent" aria-selected="true">Недавние</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="lastMonth-tab" data-toggle="tab" href="#lastMonth" role="tab" aria-controls="lastMonth" aria-selected="false">Прошлый месяц</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="older-tab" data-toggle="tab" href="#older" role="tab" aria-controls="older" aria-selected="false">Старые</a>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="masterHistoryTabsContent">
+        <div class="tab-pane fade show active" id="recent" role="tabpanel" aria-labelledby="recent-tab">
+            <ul class="list-group mt-3">
+                <!-- Заполните список недавних работ мастера -->
+                <li class="list-group-item">Работа 1</li>
+                <li class="list-group-item">Работа 2</li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="lastMonth" role="tabpanel" aria-labelledby="lastMonth-tab">
+            <ul class="list-group mt-3">
+                <!-- Заполните список работ прошлого месяца -->
+                <li class="list-group-item">Работа 3</li>
+                <li class="list-group-item">Работа 4</li>
+            </ul>
+        </div>
+        <div class="tab-pane fade" id="older" role="tabpanel" aria-labelledby="older-tab">
+            <ul class="list-group mt-3">
+                <!-- Заполните список старых работ -->
+                <li class="list-group-item">Работа 5</li>
+                <li class="list-group-item">Работа 6</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

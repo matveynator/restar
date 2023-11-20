@@ -1,0 +1,89 @@
+<!--общий чат менеджер--> 
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общий чат</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange;
+        }
+
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .chat-messages {
+            height: 500px;
+            overflow-y: scroll;
+            padding: 15px;
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .info-panel {
+            display: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <!-- Логотип RE -->
+        <div class="mb-4">
+            <span style="background-color: orange; font-size: 2rem; padding: 5px 10px;">RE</span>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="chat-header">
+                    <!-- Блок с информацией о клиенте и работе -->
+                    <div class="client-work mr-3">
+                        <strong>Клиент:</strong> Андрей Петров | <strong>Работа:</strong> Ремонт двигателя
+                    </div>
+                    <!-- Кнопки управления -->
+                    <div>
+                        <button class="btn btn-info" id="infoButton">Инфо</button>
+                        <button class="btn btn-primary">Написать в чат</button>
+                    </div>
+                </div>
+
+                <div class="chat-messages">
+                    <!-- Здесь будут отображаться сообщения чата -->
+                </div>
+
+                <div class="info-panel mt-3">
+                    <h5>Информация о заказе:</h5>
+                    <p><strong>Мастер:</strong> Иван Иванов</p>
+                    <p><strong>Запчасти:</strong> Двигатель, тормозные колодки, фильтр</p>
+                    <!-- Дополнительная информация -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JS компоненты Bootstrap и добавляем простой JS код для отображения панели информации -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById('infoButton').addEventListener('click', function () {
+            const infoPanel = document.querySelector('.info-panel');
+            if (infoPanel.style.display === 'none') {
+                infoPanel.style.display = 'block';
+            } else {
+                infoPanel.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+
+</html>

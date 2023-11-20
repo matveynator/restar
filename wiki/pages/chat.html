@@ -1,0 +1,52 @@
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказ</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Добавляем оранжевую окантовку */
+        body {
+            border: 5px solid orange;
+        }
+    </style>
+</head>
+
+<body class="p-5">
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col">
+                <!-- Заменяем кнопку на текстовое поле для гос. номера -->
+                <input type="text" class="form-control" placeholder="Введите гос. номер авто">
+            </div>
+            <div class="col">
+                <button class="btn btn-secondary w-100">Статус работы</button>
+            </div>
+        </div>
+
+        <div class="chat-box bg-light mb-4 p-3" style="height: 300px; overflow-y: scroll; border: 1px solid #ccc;">
+            <!-- Пример сообщения -->
+            <p><strong>Мастер:</strong> Здравствуйте! Как я могу помочь?</p>
+            <!-- Ваши сообщения здесь -->
+        </div>
+
+        <textarea class="form-control mb-2" placeholder="Напишите ваше сообщение..."></textarea>
+        <button class="btn btn-success mb-2">Отправить</button>
+
+        <div class="row mt-3">
+            <div class="col">
+                <button class="btn btn-info w-100">Видео</button>
+            </div>
+            <div class="col">
+                <button class="btn btn-warning w-100">Оценить работу</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

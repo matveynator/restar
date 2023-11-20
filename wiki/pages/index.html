@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет страницы</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange;
+            margin: 0;
+        }
+        .custom-btn {
+            width: 114px; /* 3 см */
+            height: 38px; /* 1 см */
+        }
+        .notification {
+            width: 19px; /* 0.5 см */
+            height: 19px; /* 0.5 см */
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .large-btn {
+            width: 190px; /* 5 см */
+            height: 57px; /* 1.5 см */
+        }
+        .center-content {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .re-text {
+            font-size: 145px; /* 32px + 113px */
+            color: black;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px; /* небольшой отступ между текстом и кнопкой */
+        }
+    </style>
+</head>
+<body>
+<input type="file" id="logo" class="position-fixed" style="top: 15px; left: 15px; width: 76px; height: 76px;"> <!-- 2 см на 3 см -->
+<button class="btn btn-primary custom-btn position-fixed mt-2" style="top: 98.6px; left: 15px;">Установить</button>
+
+<div class="container center-content">
+    <button class="btn btn-primary custom-btn position-fixed" style="top: 15px; right: 15px; margin-bottom: 7.6px;">О нас</button>
+    <button class="btn btn-primary custom-btn position-fixed mb-2 position-relative" style="top: 60.6px; right: 15px; margin-bottom: 7.6px;">Новости <div class="notification"></div></button>
+    <button class="btn btn-primary custom-btn position-fixed mb-2" style="top: 106.2px; right: 15px;">Отзывы</button>
+    
+    <div class="re-text">RE</div>
+    <button class="btn btn-danger large-btn mb-2">Связь с менеджером</button>
+    <button class="btn btn-primary large-btn mb-2 position-relative">Личный кабинет <div class="notification"></div></button>
+    <button class="btn btn-primary large-btn mb-2 position-relative">Магазин <div class="notification"></div></button>
+    <button class="btn btn-primary large-btn mb-2">Услуги & Сервис</button>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
