@@ -8,11 +8,9 @@
 ## Задание которое было поставлено в GPT:
 
 
-## Полученный от GPT результат:
+## Полученный результат:
 
-[Клиент: первая страница](/wiki/pages/client-index.html)
-<br>
-<a href="/wiki/pages/client-index.html">test</a>
+[Исходный код](/wiki/pages/client-index.html) и <a href="https://htmlpreview.github.io/?https://github.com/matveynator/restar/wiki/pages/client-index.html">отрендеренная страница</a>
 
 
 
