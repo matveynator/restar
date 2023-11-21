@@ -6,7 +6,7 @@
 ## Задания по каждой странице приложения:
 
 ### Клиентская часть:
-- [Клиент: первая страница](/wiki/pages/client-index.md) 
+- [Клиент: первая страница](/wiki/client-index.md) 
 - [Клиент: анкета](client-anketa.md)
 - [Клиент: позвонить/написать](client-call-write-contacts.md)
 - [Клиент: чат](client-chat.md)
