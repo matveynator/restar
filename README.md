@@ -7,33 +7,33 @@
 
 ### Клиентская часть:
 - [Клиент: первая страница](/wiki/client-index.md) 
-- [Клиент: анкета](client-anketa.md)
-- [Клиент: позвонить/написать](client-call-write-contacts.md)
-- [Клиент: чат](client-chat.md)
-- [Клиент: личный кабинет](client-lk.md)
-- [Клиент: заказы ](client-orders.md)
-- [Клиент: гараж](client-garage.md)
-- [Клиент: магазин](client-shop.md)
+- [Клиент: анкета](/wiki/client-anketa.md)
+- [Клиент: позвонить/написать](/wiki/client-call-write-contacts.md)
+- [Клиент: чат](/wiki/client-chat.md)
+- [Клиент: личный кабинет](/wiki/client-lk.md)
+- [Клиент: заказы ](/wiki/client-orders.md)
+- [Клиент: гараж](/wiki/client-garage.md)
+- [Клиент: магазин](/wiki/client-shop.md)
 
 
 
 ### Сторона менеджера:
-- [Менеджер: первая страница](manager-index.md)
-- [Менеджер: чат](manager-chat.md)
-- [Менеджер: личный кабинет](manager-lk.md)
-- [Менеджер: склад](manager-warehouse.md)
-- [Менеджер: новые заказы](manager-orders-new.md)
-- [Менеджер: заказы в работе](manager-orders-in-work.md)
-- [Менеджер: отложенные заказы](manager-orders-postponed.md)
-- [Менеджер: выполненные заказы](manager-orders-finished.md)
-- [Менеджер: общая история заказов](manager-orders-history-all.md)
+- [Менеджер: первая страница](/wiki/manager-index.md)
+- [Менеджер: чат](/wiki/manager-chat.md)
+- [Менеджер: личный кабинет](/wiki/manager-lk.md)
+- [Менеджер: склад](/wiki/manager-warehouse.md)
+- [Менеджер: новые заказы](/wiki/manager-orders-new.md)
+- [Менеджер: заказы в работе](/wiki/manager-orders-in-work.md)
+- [Менеджер: отложенные заказы](/wiki/manager-orders-postponed.md)
+- [Менеджер: выполненные заказы](/wiki/manager-orders-finished.md)
+- [Менеджер: общая история заказов](/wiki/manager-orders-history-all.md)
 
 
 
 ### Сторона мастера:
-- [Мастер: первая страница](master-index.md)
-- [Мастер: новые заявки](master-orders-new.md)
-- [Мастер: в работе](master-orders-in-work.md)
-- [Мастер: отложенные работы](master-orders-postponed.md)
-- [Мастер: шкаф](master-shelf.md)
-- [Мастер: склад](master-warehouse.md)
+- [Мастер: первая страница](/wiki/master-index.md)
+- [Мастер: новые заявки](/wiki/master-orders-new.md)
+- [Мастер: в работе](/wiki/master-orders-in-work.md)
+- [Мастер: отложенные работы](/wiki/master-orders-postponed.md)
+- [Мастер: шкаф](/wiki/master-shelf.md)
+- [Мастер: склад](/wiki/master-warehouse.md)
