@@ -1,5 +1,9 @@
 # Техническое задание: Простое вебприложение автосервиса
 
+<p align="right">
+    <img align="right" property="og:image" src="https://github.com/matveynator/restar/blob/main/wiki/logo.png" width="30%">
+</p>
+
 ## Цель проекта
 Разработать простое веб-приложение для автосервиса.
 
