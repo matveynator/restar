@@ -1,4 +1,4 @@
-# Менеджер: личный кабинет
+# Менеджер: общий чат
 
 ## Первичное задание нарисованное на картинке:
 <p >
@@ -7,12 +7,12 @@
 
 ## Задание для программиста (что требуется сделать):
 
-Текст задания для программиста
+Текст задания "Менеджер: общий чат" для программиста
 
 ## Задание которое было поставлено в GPT чтобы сделать макет:
 
-Текст задания для GPT для создания макета
+Текст задания "Менеджер: общий чат" для GPT для создания макета
 
 ## Полученный макет из GPT:
 
-[Исходный код](/wiki/pages/manager-chat.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-chat.html">готовая страница</a>.
+[Исходный код "Менеджер: общий чат"](/wiki/pages/manager-chat.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-chat.html">готовая страница "Менеджер: общий чат"</a>.
