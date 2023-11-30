@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад - Менеджер</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="popper.min.js"></script>
+    <style>
+        .logo {
+            background-color: orange;
+            padding: 5px 10px;
+            font-size: 24px;
+        }
+
+        .inventory-list {
+            border: 1px solid #eee;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container mt-4">
+   <!-- начало логотипа RE -->
+   <a href="/manager-lk.html"><div class="logo">RE</div></a>
+   <!-- конец логотипа RE -->
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">Добавить товар</button>
+    </div>
+
+    <h2 class="mb-4">Склад</h2>
+
+    <!-- Поисковая строка -->
+    <div class="mb-4">
+        <input type="text" class="form-control" placeholder="Поиск по товарам...">
+    </div>
+
+    <!-- Список товаров на складе -->
+    <div class="inventory-list">
+        <div>
+            <h5>Запчасть #1</h5>
+            <p>Описание: Деталь для двигателя</p>
+        </div>
+        <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#deductModal">Списать</button>
+    </div>
+
+    <!-- ... (другие товары) -->
+
+    <!-- Модальное окно для добавления товара -->
+    <div class="modal" id="addModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Добавить товар</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="text" class="form-control mb-2" placeholder="Название товара">
+                    <input type="text" class="form-control" placeholder="Описание товара">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Добавить</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для списания товара -->
+    <div class="modal" id="deductModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Списать товар</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <input type="number" class="form-control" placeholder="Количество для списания">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Списать</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+

@@ -37,7 +37,7 @@ func main() {
 	w := webview.New(false)
 	defer w.Destroy()
 	w.SetTitle("RESTAR")
-	w.SetSize(850, 500, webview.HintNone)
+	w.SetSize(600, 600, webview.HintNone)
 	w.Navigate("http://localhost" + address)
 
 	// Задаем функцию, вызываемую при загрузке страницы
@@ -53,7 +53,7 @@ func main() {
 func handleRequest(w http.ResponseWriter, r *http.Request) {
 	requestedFile := r.URL.Path[1:]
 	if requestedFile == "" {
-		requestedFile = "login.html"
+		requestedFile = "manager-lk.html"
 	}
 	log.Printf("Requested file: %s\n", requestedFile)
 
