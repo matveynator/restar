@@ -7,12 +7,12 @@
 
 ## Задание для программиста (что требуется сделать):
 
-Текст задания для программиста
+Текст задания "Менеджер: личный кабинет" для программиста
 
 ## Задание которое было поставлено в GPT чтобы сделать макет:
 
-Текст задания для GPT для создания макета
+Текст задания "Менеджер: личный кабинет" для GPT для создания макета
 
 ## Полученный макет из GPT:
 
-[Исходный код](/wiki/pages/manager-lk.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-lk.html">готовая страница</a>.
+[Исходный код "Менеджер: личный кабинет"](/wiki/pages/manager-lk.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-lk.html">готовая страница "Менеджер: личный кабинет"</a>.
