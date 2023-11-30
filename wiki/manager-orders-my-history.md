@@ -1,4 +1,4 @@
-# Менеджер: личный кабинет
+# Менеджер: моя история заявок
 
 ## Первичное задание нарисованное на картинке:
 <p >
@@ -7,12 +7,12 @@
 
 ## Задание для программиста (что требуется сделать):
 
-Текст задания для программиста
+Текст задания "Менеджер: моя история заявок" для программиста
 
 ## Задание которое было поставлено в GPT чтобы сделать макет:
 
-Текст задания для GPT для создания макета
+Текст задания "Менеджер: моя история заявок" для GPT для создания макета
 
 ## Полученный макет из GPT:
 
-[Исходный код](/wiki/pages/manager-my-history.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-my-history.html">готовая страница</a>.
+[Исходный код "Менеджер: моя история заявок"](/wiki/pages/manager-my-history.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-my-history.html">готовая страница "Менеджер: моя история заявок"</a>.
