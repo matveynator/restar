@@ -1,4 +1,4 @@
-# Менеджер: личный кабинет
+# Менеджер: отложенные заявки
 
 ## Первичное задание нарисованное на картинке:
 <p >
@@ -7,12 +7,12 @@
 
 ## Задание для программиста (что требуется сделать):
 
-Текст задания для программиста
+Текст задания "Менеджер: отложенные заявки" для программиста
 
 ## Задание которое было поставлено в GPT чтобы сделать макет:
 
-Текст задания для GPT для создания макета
+Текст задания "Менеджер: отложенные заявки" для GPT для создания макета
 
 ## Полученный макет из GPT:
 
-[Исходный код](/wiki/pages/manager-orders-postponed.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-orders-postponed.html">готовая страница</a>.
+[Исходный код "Менеджер: отложенные заявки"](/wiki/pages/manager-orders-postponed.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-orders-postponed.html">готовая страница "Менеджер: отложенные заявки"</a>.
