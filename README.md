@@ -11,7 +11,6 @@
 
 
 ### Сторона менеджера (делаем первой):
-- [Менеджер: первая страница](/wiki/manager-index.md)
 - [Менеджер: личный кабинет](/wiki/manager-lk.md)
 - [Менеджер: новые заявки](/wiki/manager-orders-new.md)
 - [Менеджер: заявки в работе](/wiki/manager-orders-in-work.md)
