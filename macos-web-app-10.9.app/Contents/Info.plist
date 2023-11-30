@@ -3,10 +3,12 @@
 <plist version="1.0">
 	<dict>
 		<key>CFBundleExecutable</key>
-		<string>webapp</string>
+		<string>Restar</string>
 		<key>LSMinimumSystemVersion</key>
 		<string>10.2</string>
 		<key>NSCameraUsageDescription</key>
 		<string>Необходимо для получения изображений QR-кодов.</string>
+		<key>CFBundleIconFile</key>
+		<string>Restar.icns</string>
 	</dict>
 </plist>
