@@ -13,14 +13,16 @@
 ### Сторона менеджера (делаем первой):
 - [Менеджер: первая страница](/wiki/manager-index.md)
 - [Менеджер: личный кабинет](/wiki/manager-lk.md)
-- [Менеджер: чат](/wiki/manager-chat.md)
-- [Менеджер: новые заказы](/wiki/manager-orders-new.md)
-- [Менеджер: заказы в работе](/wiki/manager-orders-in-work.md)
-- [Менеджер: отложенные заказы](/wiki/manager-orders-postponed.md)
-- [Менеджер: выполненные заказы](/wiki/manager-orders-finished.md)
-- [Менеджер: моя история заказов](/wiki/manager-orders-my-history.md)
-- [Менеджер: общая история заказов](/wiki/manager-orders-history-all.md)
+- [Менеджер: новые заявки](/wiki/manager-orders-new.md)
+- [Менеджер: заявки в работе](/wiki/manager-orders-in-work.md)
+
+- [Менеджер: выполненные заявки](/wiki/manager-orders-finished.md)
+- [Менеджер: отложенные заявки](/wiki/manager-orders-postponed.md)
 - [Менеджер: склад](/wiki/manager-warehouse.md)
+- [Менеджер: общая история заявок](/wiki/manager-orders-history-all.md)
+- [Менеджер: общий чат](/wiki/manager-chat.md)
+- [Менеджер: видео](/wiki/manager-video.md)
+- [Менеджер: моя история заявок](/wiki/manager-orders-my-history.md)
 - [Менеджер: склад - создать qr-code](/wiki/manager-warehouse-qr-code.md)
 
 ### Клиентская часть:
