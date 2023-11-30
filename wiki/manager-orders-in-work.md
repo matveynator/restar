@@ -1,4 +1,4 @@
-# Менеджер: личный кабинет
+# Менеджер: заявки в работе
 
 ## Первичное задание нарисованное на картинке:
 <p >
@@ -7,12 +7,12 @@
 
 ## Задание для программиста (что требуется сделать):
 
-Текст задания для программиста
+Текст задания "Менеджер: заявки в работе" для программиста
 
 ## Задание которое было поставлено в GPT чтобы сделать макет:
 
-Текст задания для GPT для создания макета
+Текст задания "Менеджер: заявки в работе" для GPT для создания макета
 
 ## Полученный макет из GPT:
 
-[Исходный код](/wiki/pages/manager-orders-in-work.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-orders-in-work.html">готовая страница</a>.
+[Исходный код "Менеджер: заявки в работе"](/wiki/pages/manager-orders-in-work.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-orders-in-work.html">готовая страница "Менеджер: заявки в работе"</a>.
