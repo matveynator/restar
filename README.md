@@ -9,6 +9,20 @@
 
 ## Задания по каждой странице приложения:
 
+
+### Сторона менеджера (делаем первой):
+- [Менеджер: первая страница](/wiki/manager-index.md)
+- [Менеджер: личный кабинет](/wiki/manager-lk.md)
+- [Менеджер: чат](/wiki/manager-chat.md)
+- [Менеджер: новые заказы](/wiki/manager-orders-new.md)
+- [Менеджер: заказы в работе](/wiki/manager-orders-in-work.md)
+- [Менеджер: отложенные заказы](/wiki/manager-orders-postponed.md)
+- [Менеджер: выполненные заказы](/wiki/manager-orders-finished.md)
+- [Менеджер: моя история заказов](/wiki/manager-orders-my-history.md)
+- [Менеджер: общая история заказов](/wiki/manager-orders-history-all.md)
+- [Менеджер: склад](/wiki/manager-warehouse.md)
+- [Менеджер: склад - создать qr-code](/wiki/manager-warehouse-qr-code.md)
+
 ### Клиентская часть:
 - [Клиент: первая страница](/wiki/client-index.md) 
 - [Клиент: анкета](/wiki/client-anketa.md)
@@ -18,21 +32,6 @@
 - [Клиент: заказы ](/wiki/client-orders.md)
 - [Клиент: гараж](/wiki/client-garage.md)
 - [Клиент: магазин](/wiki/client-shop.md)
-
-
-
-### Сторона менеджера:
-- [Менеджер: первая страница](/wiki/manager-index.md)
-- [Менеджер: чат](/wiki/manager-chat.md)
-- [Менеджер: личный кабинет](/wiki/manager-lk.md)
-- [Менеджер: склад](/wiki/manager-warehouse.md)
-- [Менеджер: новые заказы](/wiki/manager-orders-new.md)
-- [Менеджер: заказы в работе](/wiki/manager-orders-in-work.md)
-- [Менеджер: отложенные заказы](/wiki/manager-orders-postponed.md)
-- [Менеджер: выполненные заказы](/wiki/manager-orders-finished.md)
-- [Менеджер: общая история заказов](/wiki/manager-orders-history-all.md)
-
-
 
 ### Сторона мастера:
 - [Мастер: первая страница](/wiki/master-index.md)
