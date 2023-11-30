@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя история</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange;
+        }
+        .history-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .chat-button, .order-button {
+            margin-top: 10px;
+        }
+        .logo {
+            background-color: orange;
+            font-size: 2rem;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid p-3">
+        <!-- Логотип RE -->
+        <div class="logo">
+            RE
+        </div>
+        
+        <h2 class="text-center">Моя история</h2>
+        <div class="history-content">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Клиент</th>
+                        <th>Работа</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Пример строки (можно добавить больше строк по необходимости) -->
+                    <tr>
+                        <td>Иван Иванов</td>
+                        <td>Ремонт двигателя</td>
+                        <td><button class="btn btn-info chat-button">Просмотр чата</button></td>
+                        <td><button class="btn btn-warning order-button" onclick="viewOrder()">Просмотр заказ-наряда</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Подключаем JS компоненты Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function viewOrder() {
+            // Здесь можно добавить логику для отображения заказ-наряда
+            alert("Просмотр заказ-наряда");
+        }
+    </script>
+</body>
+</html> 
+
+

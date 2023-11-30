@@ -1,101 +1,47 @@
-<!-- в работе менеджер -->
-
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Склад - Менеджер</title>
+    <title>В работе</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .logo {
-            background-color: orange;
-            padding: 5px 10px;
-            font-size: 24px;
-        }
-
-        .inventory-list {
-            border: 1px solid #eee;
-            padding: 10px;
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
+        .status-badge {
+            width: 100px; /* Фиксированная ширина для улучшения визуального выравнивания */
         }
     </style>
 </head>
-
 <body>
 
-<div class="container mt-4">
-    <!-- Логотип RE -->
-    <div class="mb-4 d-flex justify-content-between align-items-center">
-        <span class="logo">RE</span>
-        <button class="btn btn-primary" data-toggle="modal" data-target="#addModal">Добавить товар</button>
-    </div>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">В работе</h2>
 
-    <h2 class="mb-4">Склад</h2>
-
-    <!-- Поисковая строка -->
-    <div class="mb-4">
-        <input type="text" class="form-control" placeholder="Поиск по товарам...">
-    </div>
-
-    <!-- Список товаров на складе -->
-    <div class="inventory-list">
-        <div>
-            <h5>Запчасть #1</h5>
-            <p>Описание: Деталь для двигателя</p>
-        </div>
-        <button class="btn btn-warning btn-sm" data-toggle="modal" data-target="#deductModal">Списать</button>
-    </div>
-
-    <!-- ... (другие товары) -->
-
-    <!-- Модальное окно для добавления товара -->
-    <div class="modal" id="addModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Добавить товар</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <input type="text" class="form-control mb-2" placeholder="Название товара">
-                    <input type="text" class="form-control" placeholder="Описание товара">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Добавить</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Модальное окно для списания товара -->
-    <div class="modal" id="deductModal">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Списать товар</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <input type="number" class="form-control" placeholder="Количество для списания">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Списать</button>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
-                </div>
-            </div>
-        </div>
-    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Заказ</th>
+                <th scope="col">Описание работы</th>
+                <th scope="col">Статус</th>
+                <th scope="col">Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Пример работы -->
+            <tr>
+                <td>Заказ #1</td>
+                <td>Замена масла и фильтров</td>
+                <td><span class="badge badge-primary status-badge">В процессе</span></td>
+                <td>
+                    <button class="btn btn-sm btn-info">Детали</button>
+                    <button class="btn btn-sm btn-success">Завершить</button>
+                </td>
+            </tr>
+            <!-- Добавьте дополнительные строки по мере необходимости -->
+        </tbody>
+    </table>
 </div>
 
-<!-- Подключаем JS компоненты Bootstrap -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-
 </html>
