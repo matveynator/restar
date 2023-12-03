@@ -6,20 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Склад - Менеджер</title>
     <style>
-        .logo {
-            background-color: orange;
-            padding: 5px 10px;
-            font-size: 24px;
+        body {
+            border: 5px solid orange; /* Оранжевая рамка */
         }
 
-        .inventory-list {
-            border: 1px solid #eee;
+        .logo {
+            background-color: orange; /* Оранжевый фон */
             padding: 10px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; /* Позиционирование в верхнем левом углу */
+            top: 10px;
+            left: 10px;
+        }
+
+        .center-buttons {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 15px;
+        }
+
+        .btn my-6 {
+            width: 400px;
+        }
+
+        .notification {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 19px;
+            height: 19px;
+            background-color: red;
+            border-radius: 50%;
         }
     </style>
+
 </head>
 
 <body>
