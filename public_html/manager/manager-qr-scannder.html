@@ -16,11 +16,8 @@
                 <video id="qr-video"></video>
             </div>
             <br>
-            <b>Detected QR code:</b>
-            <span id="cam-qr-result">None</span>
-            <br>
-            <b>Last detected at:</b>
-            <span id="cam-qr-result-timestamp"></span>
+            <b>Значение QR кода:</b>
+            <span id="cam-qr-result">Пусто</span>
             <br>
 
             <script type="module">
@@ -117,6 +114,8 @@
 
                 #video-container {
                     line-height: 0;
+		    width: 80%;
+                    height: 80%;
                 }
 
                 #video-container.example-style-1 .scan-region-highlight-svg,

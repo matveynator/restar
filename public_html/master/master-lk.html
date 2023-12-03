@@ -1,101 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет мастера</title>
-    <!-- Подключение Bootstrap CSS -->
     <link href="/static/bootstrap.min.css" rel="stylesheet">
     <script src="/static/jquery.min.js"></script>
     <script src="/static/bootstrap.min.js"></script>
     <script src="/static/popper.min.js"></script>
+
     <style>
-        /* Оранжевая полоса по периметру */
         body {
-            border: 5px solid orange;
+            border: 5px solid orange; /* Оранжевая рамка */
         }
 
-        /* Логотип RE */
         .logo {
-            width: 2cm;
-            height: 2cm;
-            background-color: orange;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            background-color: orange; /* Оранжевый фон */
+            padding: 10px;
+            font-size: 24px;
             font-weight: bold;
-            color: black;
-            position: absolute;
+            position: absolute; /* Позиционирование в верхнем левом углу */
             top: 10px;
             left: 10px;
-            font-size: 2em;  /* Увеличиваем размер шрифта */
         }
 
-        /* Стиль для видео потока */
-        #preview {
-            width: 100%;
-            max-height: 400px;
+        .center-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 15px;
+        }
+
+        .btn my-6 {
+            width: 400px;
+        }
+
+        .notification {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 19px;
+            height: 19px;
+            background-color: red;
+            border-radius: 50%;
         }
     </style>
+
+
 </head>
-<body class="p-5">
+
+<body>
 
    <!-- начало логотипа RE -->
    <a href="/index.html"><div class="logo">RE</div></a>
    <!-- конец логотипа RE -->
 
-<div class="container">
-    <h2 class="text-center mb-5">Личный кабинет мастера</h2>
+   <div class="container center-buttons">
+   <a href="/master/master-orders-new.html"><button class="btn my-6 btn-primary">Новые заявки</button><div class="notification"></div></a>
+   <a href="/master/master-orders-in-work.html"><button class="btn my-6 btn-primary">Заявки в работе</button></a>
+   <a href="/master/master-orders-postponed.html"><button class="btn my-6 btn-primary">Отложенные заявки</button></a>
+   <a href="/master/master-orders-history.html"><button class="btn my-6 btn-primary">История моих заявок</button></a>
+   <a href="/master/master-orders.html"><button class="btn my-6 btn-primary">Все заявки</button></a>
 
-    <!-- Кнопки -->
-    <div class="d-flex flex-column align-items-center">
-        <a href="заявки.html"><button class="btn btn-primary mb-2" onclick="showOrders('new')">Новые заявки</button></a>
-        <a href="в-работе.html"><button class="btn btn-secondary mb-2" onclick="showOrders('inProgress')">В работе</button></a>
-        <a href="отложено.html"><button class="btn btn-warning mb-2" onclick="showOrders('postponed')">Отложено</button></a>
-        <a href="склад.html"><button class="btn btn-info mb-2" onclick="showOrders('storage')">Склад</button></a>
-        <a href="история-лкм-2.html"><button class="btn btn-success mb-2" onclick="showOrders('history')">История</button></a>
-        <a href="шкаф.html"><button class="btn btn-dark mb-2" onclick="showOrders('locker')">Шкаф</button></a>
-        <button class="btn btn-danger mb-2" onclick="startScanner()">Сканировать QR код</button>
-    </div>
+   <a href="/master/master-chat-client.html"><button class="btn my-6 btn-primary">Чат с клиентами</button></a>
+   <a href="/master/master-shelf.html"><button class="btn my-6 btn-primary">Шкаф с инструментами</button></a>
+   <a href="/master/master-sklad.html"><button class="btn my-6 btn-primary">Склад</button></a>
+   </div>
 
-    <!-- Видео поток для сканирования QR кода -->
-    <div class="mt-5">
-        <video id="preview"></video>
-    </div>
-
-    <!-- Здесь будет отображаться содержимое выбранной категории -->
-    <div class="mt-5" id="content">
-        <!-- По умолчанию пусто -->
-    </div>
-</div>
-
-<script>
-    let scanner;
-
-    function showOrders(type) {
-        // Показываем заказы в зависимости от выбранного типа.
-        // В реальном приложении здесь будет AJAX-запрос или другая логика для отображения данных.
-        $('#content').html(`Выбран раздел: <strong>${type}</strong>`);
-    }
-
-    function startScanner() {
-        scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-        scanner.addListener('scan', function (content) {
-            alert('Scanned content: ' + content);
-            // Здесь вы можете добавить логику обработки отсканированного контента
-        });
-        Instascan.Camera.getCameras().then(function (cameras) {
-            if (cameras.length > 0) {
-                scanner.start(cameras[0]);
-            } else {
-                console.error('No cameras found.');
-            }
-        }).catch(function (e) {
-            console.error(e);
-        });
-    }
-</script>
 </body>
+
 </html>
 
 
