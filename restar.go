@@ -53,7 +53,7 @@ func main() {
 func handleRequest(w http.ResponseWriter, r *http.Request) {
 	requestedFile := r.URL.Path[1:]
 	if requestedFile == "" {
-		requestedFile = "manager-lk.html"
+		requestedFile = "index.html"
 	}
 	log.Printf("Requested file: %s\n", requestedFile)
 

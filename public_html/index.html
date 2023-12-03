@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Войти под разными пользователями:</title>
+    <link href="/bootstrap.min.css" rel="stylesheet">
+    <script src="/jquery.min.js"></script>
+    <script src="/bootstrap.min.js"></script>
+    <style>
+        body {
+            border: 5px solid orange; /* Оранжевая рамка */
+        }
+
+        .logo {
+            background-color: orange; /* Оранжевый фон */
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; /* Позиционирование в верхнем левом углу */
+            top: 10px;
+            left: 10px;
+        }
+
+        .center-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 15px;
+        }
+
+        .btn {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="index.html"><div class="logo">RE</div></a>
+
+    <div class="container center-buttons">
+        <a href="/manager-lk.html"><button class="btn btn-primary">Зайти как менеджер</button></a>
+	<a href="/master-lk.html"><button class="btn btn-primary">Зайти как мастер</button></a>
+	<a href="/kladovchik-lk.html"><button class="btn btn-primary">Зайти как кладовщик</button></a>
+	<a href="/client-lk.html"><button class="btn btn-primary">Зайти как клиент</button></a>
+    </div>
+
+
+</body>
+
+</html>
