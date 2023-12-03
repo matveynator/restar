@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет шефа</title>
-    <!-- Подключение Bootstrap CSS -->
     <link href="/static/bootstrap.min.css" rel="stylesheet">
     <script src="/static/jquery.min.js"></script>
     <script src="/static/bootstrap.min.js"></script>
     <script src="/static/popper.min.js"></script>
     <style>
         body {
-            background-color: black;
+            border: 5px solid orange; /* Оранжевая рамка */
+        }
+
+        .logo {
+            background-color: orange; /* Оранжевый фон */
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; /* Позиционирование в верхнем левом углу */
+            top: 10px;
+            left: 10px;
+        }
+
+        .center-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 15px;
+        }
+
+        .btn my-6 {
+            width: 250px;
         }
     </style>
 </head>
+
 <body>
 
-<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
-    <div class="text-center">
-        <div class="mb-3">
    <!-- начало логотипа RE -->
    <a href="/index.html"><div class="logo">RE</div></a>
    <!-- конец логотипа RE -->
-        </div>
-        
-        <!-- Кнопки -->
-        <a href="допуски.html"> <button class="btn btn-primary mb-2">Допуски</button><br></a>
-        <a href="лк-сотрудники.html"><button class="btn btn-primary mb-2">ЛК</a> сотрудников</button><br>
-        <a href="общий-чат.html"><button class="btn btn-primary mb-2">Общий чат</button><br></a>
-        <button class="btn btn-primary mb-2">Чат З/Н</button>
+
+    <div class="container center-buttons">
+        <a href="/chief/chief-permissions.html"><button class="btn my-6 btn-primary">Допуски сотрудников</button></a>
+        <a href="/chief/chief-workers.html"><button class="btn my-6 btn-primary">Сотрудники</button></a>
+        <a href="/chief/chief-chat.html"><button class="btn my-6 btn-primary">Общий чат</button></a>
     </div>
-</div>
 
 </body>
+
 </html>
+
