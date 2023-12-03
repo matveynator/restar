@@ -1,0 +1,83 @@
+<!-- склад --> 
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад</title>
+
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange; /* Оранжевая окантовка для всего тела документа */
+            margin: 0;
+            padding: 20px; /* Внутренний отступ для контента */
+        }
+
+        .logo {
+            background-color: orange; /* Оранжевый фон для логотипа */
+            display: inline-block;
+            width: 4cm;
+            height: 4cm;
+            text-align: center;
+            line-height: 4cm;
+            font-size: 64px;  /* Увеличенный размер шрифта */
+            font-weight: bold;
+            color: black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Логотип RE -->
+<div class="logo">RE</div>
+
+<!-- Основное содержимое -->
+<div class="container mt-5">
+    <!-- Меню поиска в правом верхнем углу -->
+    <div class="d-flex justify-content-end mb-3">
+        <input type="text" class="form-control w-25" placeholder="Поиск...">
+    </div>
+
+    <!-- Меню товаров по центру -->
+    <div class="row">
+        <!-- Дополнительные пункты выбора настройки поиска -->
+        <div class="col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item">Стартер</li>
+                <li class="list-group-item">Генератор</li>
+                <!-- Добавьте дополнительные пункты, если нужно -->
+            </ul>
+        </div>
+        
+        <!-- Товары -->
+        <div class="col-md-9">
+            <!-- Примеры товаров, добавьте дополнительные товары, если нужно -->
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Товар 1</h5>
+                    <p class="card-text">Описание товара 1</p>
+                </div>
+            </div>
+            
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Товар 2</h5>
+                    <p class="card-text">Описание товара 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Подключение Bootstrap JS и зависимостей -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
