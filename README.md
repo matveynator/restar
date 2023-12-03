@@ -1,3 +1,9 @@
+# Скачать приложение Restar:
+    
+    ### Загрузить: [download](http://files.matveynator.ru/restar/latest/)
+
+
+
 # Техническое задание: Простое вебприложение автосервиса
 
 <p align="right">
