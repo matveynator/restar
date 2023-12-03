@@ -1,5 +1,5 @@
 #!/bin/bash
-version="0.0-008"
+version="0.0-009"
 git_root_path=`git rev-parse --show-toplevel`
 execution_file="restar"
 

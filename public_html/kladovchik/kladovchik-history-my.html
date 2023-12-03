@@ -12,23 +12,43 @@
     <script src="/static/popper.min.js"></script>
     <style>
         body {
-            border: 5px solid orange;
+            border: 5px solid orange; /* Оранжевая рамка */
         }
-        .history-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 80vh;
-        }
+
         .logo {
-            background-color: orange;
-            font-size: 2rem;
-            padding: 5px 10px;
-            position: absolute;
+            background-color: orange; /* Оранжевый фон */
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; /* Позиционирование в верхнем левом углу */
             top: 10px;
             left: 10px;
         }
+
+        .center-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 15px;
+        }
+
+        .btn my-6 {
+            width: 400px;
+        }
+
+        .notification {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 19px;
+            height: 19px;
+            background-color: red;
+            border-radius: 50%;
+        }
     </style>
+
 </head>
 
 <body>

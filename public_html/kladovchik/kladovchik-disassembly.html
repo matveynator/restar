@@ -12,22 +12,44 @@
     <script src="/static/popper.min.js"></script>
     <script type="text/javascript" src="/static/instascan.min.js"></script>
     <style>
+        body {
+            border: 5px solid orange; /* Оранжевая рамка */
+        }
+
         .logo {
-            font-size: 1rem;
-            padding: 5px;
-            color: black;
-            background-color: orange;
-            display: inline-block;
-            border-radius: 5px;
+            background-color: orange; /* Оранжевый фон */
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; /* Позиционирование в верхнем левом углу */
+            top: 10px;
+            left: 10px;
         }
-        .button-block {
-            font-size: 1.2rem;
-            padding: 7.5px 15px;
+
+        .center-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 15px;
         }
-        .aggregates-table {
-            margin-top: 20px;
+
+        .btn my-6 {
+            width: 400px;
+        }
+
+        .notification {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 19px;
+            height: 19px;
+            background-color: red;
+            border-radius: 50%;
         }
     </style>
+
 </head>
 <body class="p-3">
    <!-- начало логотипа RE -->
