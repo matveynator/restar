@@ -103,7 +103,7 @@ EOF
 #compile gui app:
 GOOS=darwin GOARCH=amd64 go build -ldflags "-w -s -linkmode=external -extldflags '-mmacosx-version-min=10.9' -X restar/pkg/config.CompileVersion=${version}" -o ${git_root_path}/binaries/${version}/restar-${version}-amd64-mac.app/Contents/MacOS/Restar ../restar.go 2> /dev/null
 
-GOOS=darwin GOARCH=arm64 CGO_ENABLED=1 go build -ldflags "-w -s -linkmode=external -extldflags '-mmacosx-version-min=10.9'" -o ${git_root_path}/binaries/${version}/restar-${version}-arm64-mac.app/Contents/MacOS/Restar ../restar.go 2> /dev/null
+GOOS=darwin GOARCH=arm64 go build -ldflags "-w -s -linkmode=external -extldflags '-mmacosx-version-min=10.9' -X restar/pkg/config.CompileVersion=${version}" -o ${git_root_path}/binaries/${version}/restar-${version}-arm64-mac.app/Contents/MacOS/Restar ../restar.go 2> /dev/null
 
 lipo -create -output "${git_root_path}/binaries/${version}/restar-${version}-universal-mac.app/Contents/MacOS/Restar" "${git_root_path}/binaries/${version}/restar-${version}-amd64-mac.app/Contents/MacOS/Restar" "${git_root_path}/binaries/${version}/restar-${version}-arm64-mac.app/Contents/MacOS/Restar"
 
