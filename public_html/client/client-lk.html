@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Личный кабинет</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
+    <script src="/static/popper.min.js"></script>
     <style>
         body {
             border: 5px solid orange;
@@ -45,12 +48,12 @@
 </head>
 <body class="d-flex flex-column align-items-center justify-content-center p-5">
     <h1 class="text-center w-100 mb-3" style="font-size: 32px; color: black;">Личный Кабинет</h1>
-    <a href="анкета.html"><button class="btn btn-primary">Анкета</button></a>
+    <a href="/client/client-anketa.html"><button class="btn btn-primary">Анкета</button></a>
     <button class="btn btn-primary position-relative" data-toggle="modal" data-target="#orderModal">
         Заказ
         <div class="notification"></div>
     </button>
-    <a href="мой-гараж.html"><button class="btn btn-primary position-relative">
+    <a href="/client/client-garage.html"><button class="btn btn-primary position-relative">
         Мой гараж
         <div class="notification"></div>
     </button></a>
@@ -74,7 +77,7 @@
           </div>
           <div class="modal-body">
             <ul class="list-group">
-              <a href="история-заказов.html"><button class="list-group-item btn btn-light">История заказов</button></a>
+              <a href="/client/client-history.html"><button class="list-group-item btn btn-light">История заказов</button></a>
               <button class="list-group-item btn btn-light">Создать заказ</button>
               <button class="list-group-item btn btn-light">Заказы в работе</button>
             </ul>
@@ -86,8 +89,6 @@
       </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 
