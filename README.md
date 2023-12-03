@@ -4,7 +4,7 @@
 # Техническое задание: Простое вебприложение автосервиса
 
 <p align="right">
-    <img align="right" property="og:image" src="https://github.com/matveynator/restar/blob/main/wiki/logo.png" width="40%">
+    <img align="right" property="og:image" src="https://github.com/matveynator/restar/blob/main/wiki/logo.png" width="50%">
 </p>
 
 ## Цель проекта
