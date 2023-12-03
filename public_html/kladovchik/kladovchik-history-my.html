@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя история - Кладовщик</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange;
+        }
+        .history-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .logo {
+            background-color: orange;
+            font-size: 2rem;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-3">
+        <!-- Логотип RE -->
+        <div class="logo">
+            RE
+        </div>
+
+        <h2 class="text-center">Моя история - Кладовщик</h2>
+        <div class="history-content">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Дата</th>
+                        <th>Действие</th>
+                        <th>Подробнее</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Пример строки (можно добавить больше строк по необходимости) -->
+                    <tr>
+                        <td>22/10/2023</td>
+                        <td>Поступление товара на склад</td>
+                        <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#infoModal1">Просмотр</button></td>
+                    </tr>
+                    <tr>
+                        <td>20/10/2023</td>
+                        <td>Отгрузка товара со склада</td>
+                        <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#infoModal2">Просмотр</button></td>
+                    </tr>
+                    <!-- Другие записи -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Модальное окно для первого события -->
+    <div class="modal fade" id="infoModal1" tabindex="-1" role="dialog" aria-labelledby="infoModal1Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModal1Label">Подробная информация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Товар X, 10 шт. были добавлены на склад.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно для второго события -->
+    <div class="modal fade" id="infoModal2" tabindex="-1" role="dialog" aria-labelledby="infoModal2Label" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModal2Label">Подробная информация</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Товар Y, 5 шт. были отгружены со склада.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JS компоненты Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+

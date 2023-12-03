@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Допуски</title>
+    <!-- Подключаем Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Стили для темной темы */
+        body {
+            background-color: #121212;
+            color: #e1e1e1;
+        }
+        .modal-content {
+            background-color: #232323;
+        }
+        /* Стиль для логотипа RE */
+        .logo-re {
+            background: linear-gradient(to right, black, orange);
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="logo-re">RE</div>
+    <h2>Список сотрудников:</h2>
+    <ul class="list-group">
+        <li class="list-group-item bg-dark" data-toggle="modal" data-target="#myModal">Сотрудник 1</li>
+        <li class="list-group-item bg-dark" data-toggle="modal" data-target="#myModal">Сотрудник 2</li>
+        <li class="list-group-item bg-dark" data-toggle="modal" data-target="#myModal">Сотрудник 3</li>
+    </ul>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4 class="modal-title">Выберите должность и допуск для сотрудника</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="position">Должность:</label>
+                    <select class="form-control bg-dark text-light" id="position">
+                        <option>Должность 1</option>
+                        <option>Должность 2</option>
+                        <option>Должность 3</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="access">Допуск к информации:</label>
+                    <select multiple class="form-control bg-dark text-light" id="access">
+                        <option>Допуск 1</option>
+                        <option>Допуск 2</option>
+                        <option>Допуск 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Сохранить</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Закрыть</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Подключаем Bootstrap и jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

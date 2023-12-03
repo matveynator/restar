@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чат с менеджером</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            border: 5px solid orange;
+        }
+        .chat-box {
+            height: 500px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fffaf0;
+        }
+        .send-button {
+            width: 100%;
+            background-color: orange;
+            border-color: orange;
+        }
+        .send-button:hover {
+            background-color: #e69500;
+            border-color: #e69500;
+        }
+        .file-input {
+            margin-bottom: 10px;
+        }
+        .logo {
+            background-color: orange;
+            font-size: 2rem;
+            padding: 5px 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">RE</div>
+        
+        <h2 class="text-center" style="color: black;">Чат с менеджером</h2>
+        
+        <div class="chat-box" id="chatBox">
+            <!-- Сообщения будут добавляться здесь -->
+        </div>
+
+        <input type="file" class="file-input" id="fileInput" multiple>
+        <textarea class="form-control" id="messageInput" placeholder="Введите ваше сообщение..."></textarea>
+        <button class="btn btn-primary send-button" onclick="sendMessage()">Отправить</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function sendMessage() {
+            const chatBox = document.getElementById('chatBox');
+            const messageInput = document.getElementById('messageInput');
+            const fileInput = document.getElementById('fileInput');
+            const message = messageInput.value.trim();
+            
+            if (message) {
+                chatBox.innerHTML += `<p><strong>Вы:</strong> ${message}</p>`;
+                messageInput.value = '';
+            }
+            
+            if (fileInput.files.length > 0) {
+                for (const file of fileInput.files) {
+                    const fileType = file.type.split('/')[0];
+                    if (fileType === 'image' || fileType === 'video') {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            chatBox.innerHTML += `
+                                <p><strong>Вы отправили ${fileType}:</strong></p>
+                                <p><${fileType} src="${e.target.result}" style="max-width: 100%; height: auto;"></p>
+                            `;
+                        };
+                        reader.readAsDataURL(file);
+                    } else {
+                        chatBox.innerHTML += `<p><strong>Вы отправили файл:</strong> ${file.name}</p>`;
+                    }
+                }
+            }
+
+            chatBox.scrollTop = chatBox.scrollHeight;
+            fileInput.value = '';
+        }
+    </script>
+</body>
+</html>
+
+
+

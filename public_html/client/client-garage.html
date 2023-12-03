@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой гараж</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #appointmentButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Мой гараж</h2>
+
+    <a href="чат-с-менеджером-клиент.html"><button id="appointmentButton" class="btn btn-success">Записаться на ремонт</button></a>
+
+    <form id="carForm">
+        <div class="form-group">
+            <label for="carModel">Модель автомобиля:</label>
+            <input type="text" class="form-control" id="carModel" placeholder="Введите модель автомобиля">
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить автомобиль</button>
+    </form>
+
+    <div class="mt-5">
+        <h3>Мои автомобили:</h3>
+        <ul class="list-group" id="carList"></ul>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.getElementById('carForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const carModel = document.getElementById('carModel').value;
+
+        if (carModel) {
+            const listItem = document.createElement('li');
+            listItem.classList.add('list-group-item');
+            listItem.innerHTML = `
+                ${carModel} 
+                <button class="btn btn-info btn-sm float-right">История работ</button>
+            `;
+
+            listItem.querySelector('button').addEventListener('click', function() {
+                alert('История работ для ' + carModel); // Здесь вы можете добавить логику для отображения истории работ
+            });
+
+            document.getElementById('carList').appendChild(listItem);
+
+            // Очистка формы после добавления
+            document.getElementById('carModel').value = '';
+        }
+    });
+</script>
+</body>
+</html>
+

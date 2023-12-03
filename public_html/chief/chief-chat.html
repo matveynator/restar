@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общий чат</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="text-center">Общий чат</h2>
+    <div class="chat-box border rounded p-3 mb-4" style="height: 400px; overflow-y: scroll;">
+        <!-- Сообщения будут отображаться здесь -->
+    </div>
+    <form class="form-inline">
+        <div class="form-group flex-grow-1">
+            <input type="text" class="form-control w-100" placeholder="Введите ваше сообщение...">
+        </div>
+        <div class="form-group ml-2">
+            <label class="btn btn-primary btn-file">
+                <i class="fas fa-image"></i> <input type="file" accept="image/*" style="display: none;">
+            </label>
+            <label class="btn btn-primary btn-file ml-2">
+                <i class="fas fa-video"></i> <input type="file" accept="video/*" style="display: none;">
+            </label>
+        </div>
+        <button type="submit" class="btn btn-success ml-2">Отправить</button>
+    </form>
+</div>
+
+<!-- Подключаем Bootstrap и jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Для иконок -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

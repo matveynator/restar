@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История заказов</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="p-5">
+
+    <h2 class="mb-4">История заказов</h2>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Дата</th>
+                <th>Описание работы</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>01.11.2023</td>
+                <td>Замена масла</td>
+                <td><button class="btn btn-info" data-toggle="modal" data-target="#orderInfoModal1">Инфо</button></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>03.11.2023</td>
+                <td>Ремонт двигателя</td>
+                <td><button class="btn btn-info" data-toggle="modal" data-target="#orderInfoModal2">Инфо</button></td>
+            </tr>
+            <!-- Добавьте дополнительные строки по аналогии, если нужно -->
+        </tbody>
+    </table>
+
+    <!-- Модальное окно для первого заказа -->
+    <div class="modal fade" id="orderInfoModal1" tabindex="-1" role="dialog" aria-labelledby="orderInfoModalLabel1" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderInfoModalLabel1">Заказ №1</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Замена масла</p>
+            <p>Запчасти: Фильтр, масло</p>
+            <!-- Добавьте дополнительную информацию по необходимости -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно для второго заказа -->
+    <div class="modal fade" id="orderInfoModal2" tabindex="-1" role="dialog" aria-labelledby="orderInfoModalLabel2" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderInfoModalLabel2">Заказ №2</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Ремонт двигателя</p>
+            <p>Запчасти: Ремень ГРМ, свечи</p>
+            <!-- Добавьте дополнительную информацию по необходимости -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

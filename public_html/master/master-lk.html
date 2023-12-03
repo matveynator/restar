@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет мастера</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <style>
+        /* Оранжевая полоса по периметру */
+        body {
+            border: 5px solid orange;
+        }
+
+        /* Логотип RE */
+        .logo {
+            width: 2cm;
+            height: 2cm;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: black;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 2em;  /* Увеличиваем размер шрифта */
+        }
+
+        /* Стиль для видео потока */
+        #preview {
+            width: 100%;
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body class="p-5">
+
+<!-- Логотип RE -->
+<div class="logo">RE</div>
+
+<div class="container">
+    <h2 class="text-center mb-5">Личный кабинет мастера</h2>
+
+    <!-- Кнопки -->
+    <div class="d-flex flex-column align-items-center">
+        <a href="заявки.html"><button class="btn btn-primary mb-2" onclick="showOrders('new')">Новые заявки</button></a>
+        <a href="в-работе.html"><button class="btn btn-secondary mb-2" onclick="showOrders('inProgress')">В работе</button></a>
+        <a href="отложено.html"><button class="btn btn-warning mb-2" onclick="showOrders('postponed')">Отложено</button></a>
+        <a href="склад.html"><button class="btn btn-info mb-2" onclick="showOrders('storage')">Склад</button></a>
+        <a href="история-лкм-2.html"><button class="btn btn-success mb-2" onclick="showOrders('history')">История</button></a>
+        <a href="шкаф.html"><button class="btn btn-dark mb-2" onclick="showOrders('locker')">Шкаф</button></a>
+        <button class="btn btn-danger mb-2" onclick="startScanner()">Сканировать QR код</button>
+    </div>
+
+    <!-- Видео поток для сканирования QR кода -->
+    <div class="mt-5">
+        <video id="preview"></video>
+    </div>
+
+    <!-- Здесь будет отображаться содержимое выбранной категории -->
+    <div class="mt-5" id="content">
+        <!-- По умолчанию пусто -->
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    let scanner;
+
+    function showOrders(type) {
+        // Показываем заказы в зависимости от выбранного типа.
+        // В реальном приложении здесь будет AJAX-запрос или другая логика для отображения данных.
+        $('#content').html(`Выбран раздел: <strong>${type}</strong>`);
+    }
+
+    function startScanner() {
+        scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+        scanner.addListener('scan', function (content) {
+            alert('Scanned content: ' + content);
+            // Здесь вы можете добавить логику обработки отсканированного контента
+        });
+        Instascan.Camera.getCameras().then(function (cameras) {
+            if (cameras.length > 0) {
+                scanner.start(cameras[0]);
+            } else {
+                console.error('No cameras found.');
+            }
+        }).catch(function (e) {
+            console.error(e);
+        });
+    }
+</script>
+</body>
+</html>
+
+
+
+

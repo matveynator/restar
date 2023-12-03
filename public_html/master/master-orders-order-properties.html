@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Настройки для новых заявок</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .logo {
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 24px;
+            background-color: orange; /* Изменённый цвет фона */
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="text-left">
+            <div class="logo">RE</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="mb-4 text-center">Настройки</h2>
+                <div class="mb-4">
+                    <label for="videoInput">Выберите видео:</label>
+                    <input type="file" id="videoInput" accept="video/*">
+                </div>
+                <div class="mb-4">
+                    <label for="orderSelect">Выберите заказ:</label>
+                    <select id="orderSelect" class="form-control">
+                        <option value="order1">Заказ #1</option>
+                        <option value="order2">Заказ #2</option>
+                        <!-- Добавьте дополнительные заказы при необходимости -->
+                    </select>
+                </div>
+                <button class="btn btn-primary btn-block">Привязать видео к заказу</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+

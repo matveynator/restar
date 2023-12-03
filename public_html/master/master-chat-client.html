@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Страница</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange;
+        }
+        .chat-box {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body class="p-5">
+    <div class="container">
+        <h2 class="mb-4">Личный кабинет</h2>
+        
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <input type="text" class="form-control mb-2" placeholder="Поиск услуг">
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-secondary w-100">Найти</button>
+            </div>
+        </div>
+        
+        <div class="chat-box bg-light mb-4 p-3" id="chat-box">
+            <p><strong>Менеджер:</strong> Добрый день! Как мы можем Вам помочь?</p>
+            <p><strong>Вы:</strong> Здравствуйте! Мне нужна помощь по дому.</p>
+            <!-- Ваши сообщения здесь -->
+        </div>
+        
+        <textarea class="form-control mb-2" placeholder="Напишите ваше сообщение..." id="message-input"></textarea>
+        <button class="btn btn-success mb-2" onclick="sendMessage()">Отправить</button>
+        
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <button class="btn btn-info w-100">Заказать услугу</button>
+            </div>
+            <div class="col-md-6">
+                <input type="file" accept="video/*" class="form-control mb-2" id="video-input">
+                <button class="btn btn-warning w-100" onclick="sendVideo()">Отправить видео</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function sendMessage() {
+            var message = document.getElementById('message-input').value;
+            if (message.trim() !== '') {
+                var chatBox = document.getElementById('chat-box');
+                chatBox.innerHTML += `<p><strong>Вы:</strong> ${message}</p>`;
+                document.getElementById('message-input').value = '';
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+
+        function sendVideo() {
+            var videoInput = document.getElementById('video-input');
+            if (videoInput.files.length > 0) {
+                var chatBox = document.getElementById('chat-box');
+                chatBox.innerHTML += `<p><strong>Вы:</strong> Отправлено видео - ${videoInput.files[0].name}</p>`;
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>
+

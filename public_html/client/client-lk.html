@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            border: 5px solid orange;
+            height: calc(100vh - 10px);
+            box-sizing: border-box;
+        }
+        .notification {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            width: 19px;
+            height: 19px;
+            background-color: red;
+            border-radius: 50%;
+        }
+        .btn {
+            margin-bottom: 38px;
+            width: 190px;
+            height: 57px;
+        }
+        .btn-arrow {
+            width: 76px;
+            height: 38px;
+            border: none;
+            background-color: #f7f7f7;
+            position: absolute;
+            bottom: 38px;
+        }
+        .btn-left {
+            left: 50%;
+            transform: translateX(-120%);
+        }
+        .btn-right {
+            left: 50%;
+            transform: translateX(20%);
+        }
+    </style>
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center p-5">
+    <h1 class="text-center w-100 mb-3" style="font-size: 32px; color: black;">Личный Кабинет</h1>
+    <a href="анкета.html"><button class="btn btn-primary">Анкета</button></a>
+    <button class="btn btn-primary position-relative" data-toggle="modal" data-target="#orderModal">
+        Заказ
+        <div class="notification"></div>
+    </button>
+    <a href="мой-гараж.html"><button class="btn btn-primary position-relative">
+        Мой гараж
+        <div class="notification"></div>
+    </button></a>
+
+    <button class="btn-arrow btn-left">
+        <span>&larr;</span>
+    </button>
+    <button class="btn-arrow btn-right">
+        <span>&rarr;</span>
+    </button>
+
+    <!-- Модальное окно для заказов -->
+    <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderModalLabel">Заказ</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <a href="история-заказов.html"><button class="list-group-item btn btn-light">История заказов</button></a>
+              <button class="list-group-item btn btn-light">Создать заказ</button>
+              <button class="list-group-item btn btn-light">Заказы в работе</button>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+

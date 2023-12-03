@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Склад кладовщика</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .logo {
+            background-color: orange;
+            padding: 5px 10px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container mt-4">
+    <!-- Логотип RE -->
+    <div class="mb-4 d-flex justify-content-start">
+        <span class="logo">RE</span>
+    </div>
+
+    <h2 class="mb-4 text-center">Склад кладовщика</h2>
+
+    <!-- Таблица товаров -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Название товара</th>
+                <th>Количество</th>
+                <th>Действия</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Пример строки товара -->
+            <tr>
+                <td>1</td>
+                <td>Товар A</td>
+                <td>10</td>
+                <td>
+                    <button class="btn btn-sm btn-warning">Редактировать</button>
+                    <button class="btn btn-sm btn-primary">Создать код</button>
+                </td>
+            </tr>
+            <!-- ... -->
+        </tbody>
+    </table>
+
+    <!-- Кнопка добавления нового товара -->
+    <button class="btn btn-success mb-3">Добавить товар</button>
+</div>
+
+<!-- Подключаем JS компоненты Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

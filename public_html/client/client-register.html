@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light p-5">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header text-center">Регистрация</div>
+                    <div class="card-body">
+                        <form>
+                            <!-- Поле для номера телефона -->
+                            <div class="form-group">
+                                <label for="phoneNumber">Номер телефона</label>
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="+7 (___) ___-____">
+                            </div>
+                            <!-- Поле для имени -->
+                            <div class="form-group">
+                                <label for="firstName">Имя</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="Иван">
+                            </div>
+                            <!-- Поле для фамилии -->
+                            <div class="form-group">
+                                <label for="lastName">Фамилия</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Иванов">
+                            </div>
+                            <!-- Поле для ссылки на соц. сети -->
+                            <div class="form-group">
+                                <label for="socialLink">Ссылка на социальные сети</label>
+                                <input type="url" class="form-control" id="socialLink" placeholder="https://...">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
