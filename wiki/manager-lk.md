@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: личный кабинет"](/wiki/pages/manager-lk.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-lk.html">готовая страница "Менеджер: личный кабинет"</a>.
+[Исходный код "Менеджер: личный кабинет"](/public_html/manager-lk.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/pages/manager-lk.html">готовая страница "Менеджер: личный кабинет"</a>.
