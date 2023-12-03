@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: моя история заявок"](/wiki/pages/manager-my-history.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-my-history.html">готовая страница "Менеджер: моя история заявок"</a>.
+[Исходный код "Менеджер: моя история заявок"](/public_html/manager-my-history.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/manager-my-history.html">готовая страница "Менеджер: моя история заявок"</a>.

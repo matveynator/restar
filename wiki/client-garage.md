@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код](/wiki/pages/client-garage.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/client-garage.html">готовая страница</a>.
+[Исходный код](/public_html/client-garage.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/client-garage.html">готовая страница</a>.

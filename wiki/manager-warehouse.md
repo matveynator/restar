@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: склад"](/wiki/pages/manager-warehouse.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-warehouse.html">готовая страница "Менеджер: склад"</a>.
+[Исходный код "Менеджер: склад"](/public_html/manager-warehouse.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/manager-warehouse.html">готовая страница "Менеджер: склад"</a>.

@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: склад - создать qr-code"](/wiki/pages/manager-warehouse.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-warehouse.html">готовая страница "Менеджер: склад - создать qr-code"</a>.
+[Исходный код "Менеджер: склад - создать qr-code"](/public_html/manager-warehouse.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/manager-warehouse.html">готовая страница "Менеджер: склад - создать qr-code"</a>.

@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: отложенные заявки"](/wiki/pages/manager-orders-postponed.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-orders-postponed.html">готовая страница "Менеджер: отложенные заявки"</a>.
+[Исходный код "Менеджер: отложенные заявки"](/public_html/manager-orders-postponed.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/manager-orders-postponed.html">готовая страница "Менеджер: отложенные заявки"</a>.

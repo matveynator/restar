@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: выполненные заявки"](/wiki/pages/manager-orders-finished.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-orders-finished.html">готовая страница "Менеджер: выполненные заявки"</a>.
+[Исходный код "Менеджер: выполненные заявки"](/public_html/manager-orders-finished.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/manager-orders-finished.html">готовая страница "Менеджер: выполненные заявки"</a>.

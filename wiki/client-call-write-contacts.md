@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код](/wiki/pages/client-call-write-contacts.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/client-call-write-contacts.html">готовая страница</a>.
+[Исходный код](/public_html/client-call-write-contacts.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/client-call-write-contacts.html">готовая страница</a>.

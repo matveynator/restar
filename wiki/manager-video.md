@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: видео"](/wiki/pages/manager-video.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-video.html">готовая страница "Менеджер: видео"</a>.
+[Исходный код "Менеджер: видео"](/public_html/manager-video.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/manager-video.html">готовая страница "Менеджер: видео"</a>.

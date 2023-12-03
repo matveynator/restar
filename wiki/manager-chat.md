@@ -15,4 +15,4 @@
 
 ## Полученный макет из GPT:
 
-[Исходный код "Менеджер: общий чат"](/wiki/pages/manager-chat.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/wiki/pages/manager-chat.html">готовая страница "Менеджер: общий чат"</a>.
+[Исходный код "Менеджер: общий чат"](/public_html/manager-chat.html) и <a href="https://htmlpreview.github.io?https://github.com/matveynator/restar/blob/main/public_html/manager-chat.html">готовая страница "Менеджер: общий чат"</a>.
