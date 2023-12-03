@@ -10,10 +10,32 @@
     <script src="/static/popper.min.js"></script>
     <style>
         body {
-            border: 5px solid orange;
-            height: calc(100vh - 10px);
-            box-sizing: border-box;
+            border: 5px solid orange; /* Оранжевая рамка */
         }
+
+        .logo {
+            background-color: orange; /* Оранжевый фон */
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            position: absolute; /* Позиционирование в верхнем левом углу */
+            top: 10px;
+            left: 10px;
+        }
+
+        .center-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            gap: 15px;
+        }
+
+        .btn my-6 {
+            width: 400px;
+        }
+
         .notification {
             position: absolute;
             top: 5px;
@@ -23,28 +45,8 @@
             background-color: red;
             border-radius: 50%;
         }
-        .btn {
-            margin-bottom: 38px;
-            width: 190px;
-            height: 57px;
-        }
-        .btn-arrow {
-            width: 76px;
-            height: 38px;
-            border: none;
-            background-color: #f7f7f7;
-            position: absolute;
-            bottom: 38px;
-        }
-        .btn-left {
-            left: 50%;
-            transform: translateX(-120%);
-        }
-        .btn-right {
-            left: 50%;
-            transform: translateX(20%);
-        }
     </style>
+
 </head>
 <body class="d-flex flex-column align-items-center justify-content-center p-5">
    <!-- начало логотипа RE -->
@@ -54,72 +56,68 @@
     <a href="/client/client-anketa.html">
 	<button class="btn btn-primary">Моя анкета</button>
     </a>
+    <br>
 
     <button class="btn btn-primary position-relative" data-toggle="modal" data-target="#orderModal">
         Заказ
-        <div class="notification"></div>
     </button>
+    <br>
 
     <a href="/client/client-garage.html">
     <button class="btn btn-primary position-relative">
         Мой гараж
-        <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-manager-chat.html">
     <button class="btn btn-primary position-relative">
         Чат с менеджером
         <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-manager-contact.html">
     <button class="btn btn-primary position-relative">
         Связь с менеджером
-        <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-master-chat.html">
     <button class="btn btn-primary position-relative">
         Чат с мастером
         <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-orders-history.html">
     <button class="btn btn-primary position-relative">
         История заказов
-        <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-orders.html">
     <button class="btn btn-primary position-relative">
         Моя история
-        <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-orders-history.html">
     <button class="btn btn-primary position-relative">
         История заказов
-        <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-register.html">
     <button class="btn btn-primary position-relative">
         Регистрация
-        <div class="notification"></div>
     </button></a>
+    <br>
 
     <a href="/client/client-shop.html">
     <button class="btn btn-primary position-relative">
         Магазин
-        <div class="notification"></div>
     </button></a>
-
-    <button class="btn-arrow btn-left">
-        <span>&larr;</span>
-    </button>
-    <button class="btn-arrow btn-right">
-        <span>&rarr;</span>
-    </button>
+    <br>
 
     <!-- Модальное окно для заказов -->
     <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
