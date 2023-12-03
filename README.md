@@ -1,3 +1,6 @@
+[Скачать приложение](http://files.matveynator.ru/restar/latest/) / [Download app](http://files.matveynator.ru/restar/latest/)
+
+
 # Техническое задание: Простое вебприложение автосервиса
 
 <p align="right">
