@@ -1,6 +1,6 @@
 # Скачать приложение Restar:
     
-Загрузить: [download](http://files.matveynator.ru/restar/latest/)
+[Скачать приложение](http://files.matveynator.ru/restar/latest/) / [Download app](http://files.matveynator.ru/restar/latest/)
 
 
 
