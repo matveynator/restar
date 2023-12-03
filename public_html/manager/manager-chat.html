@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Общий чат</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <script src="jquery.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
+    <script src="/static/popper.min.js"></script>
     <style>
         body {
             border: 5px solid orange;
@@ -40,7 +41,7 @@
     <div class="container mt-5">
 
    <!-- начало логотипа RE -->
-   <a href="/manager-lk.html"><div class="logo">RE</div></a>
+   <a href="/manager/manager-lk.html"><div class="logo">RE</div></a>
    <!-- конец логотипа RE -->
 
         <div class="row">
@@ -71,8 +72,6 @@
         </div>
     </div>
 
-    <!-- Подключаем JS компоненты Bootstrap и добавляем простой JS код для отображения панели информации -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
     <script>
         document.getElementById('infoButton').addEventListener('click', function () {

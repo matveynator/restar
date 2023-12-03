@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="/static/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
+    <script src="/static/popper.min.js"></script>
 </head>
 <body class="bg-light">
    <!-- начало логотипа RE -->
-   <a href="/manager-lk.html"><div class="logo">RE</div></a>
+   <a href="/manager/manager-lk.html"><div class="logo">RE</div></a>
    <!-- конец логотипа RE -->
             <div id="video-container">
                 <video id="qr-video"></video>
@@ -21,7 +24,7 @@
             <br>
 
             <script type="module">
-                import QrScanner from "https://nimiq.github.io/qr-scanner/qr-scanner.min.js";
+                import QrScanner from "/static/qr-scanner.min.js";
                 const video = document.getElementById('qr-video');
                 const videoContainer = document.getElementById('video-container');
                 const camHasCamera = document.getElementById('cam-has-camera');
